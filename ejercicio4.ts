@@ -1,5 +1,3 @@
-// Ejercicio 4 - Usando async/await
-
 async function procesarPedido(): Promise<void> {
   console.log("[Inicio del proceso]");
   try {
