@@ -9,7 +9,7 @@ const d1 = descargarArchivo("Archivo1", 3000);
 const d2 = descargarArchivo("Archivo2", 5000);
 const d3 = descargarArchivo("Archivo3", 2000);
 
-Promise.race([d1, d2, d3]).then((res) => console.log("🏁", res, "fue el primero"));
+Promise.race([d1, d2, d3]).then((res) => console.log("X", res, "fue el primero"));
 Promise.all([d1, d2, d3]).then(() =>
-  console.log("✅ Todas las descargas completadas")
+  console.log("X", "Todas las descargas completadas")
 );

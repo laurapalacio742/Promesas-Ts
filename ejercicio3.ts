@@ -12,5 +12,5 @@ function getPosts(): Promise<string[]> {
 }
 
 Promise.all([getUsers(), getPosts()])
-  .then(() => console.log("✅ Usuarios y publicaciones cargados correctamente"))
-  .catch(() => console.log("❌ Error al cargar los datos"));
+  .then(() => console.log("Usuarios y publicaciones cargados correctamente"))
+  .catch(() => console.log("Error al cargar los datos"));

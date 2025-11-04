@@ -3,8 +3,8 @@ function fetchData(): Promise<string> {
     console.log("⏳ Cargando datos...");
     setTimeout(() => {
       Math.random() > 0.5
-        ? resolve("✅ Datos cargados correctamente")
-        : reject("❌ Error al cargar los datos");
+        ? resolve("Datos cargados correctamente")
+        : reject("Error al cargar los datos");
     }, 2000);
   });
 }
